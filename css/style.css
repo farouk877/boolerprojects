@@ -1807,6 +1807,18 @@ h1, h2, h3, h4, h5,
     top: 0;
     background-color: #fff6da; }
 
+.bg-left-third {
+  position: relative; }
+  .bg-left-third:before {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #fff6da; }
+
 .media-29101 img {
   margin-bottom: 20px; }
 
@@ -1883,7 +1895,9 @@ h1, h2, h3, h4, h5,
 .site-logo-footer a {
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 900 !important; }
+  font-weight: 900 !important;
+  color: #000;
+ }
 
 .links li {
   margin-bottom: 10px; }
