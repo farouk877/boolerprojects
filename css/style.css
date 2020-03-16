@@ -1904,8 +1904,8 @@ h1, h2, h3, h4, h5,
   background: #fff6da; }
   .testimony-29101 .text blockquote {
     position: relative;
-    padding-bottom: 50px;
-    font-size: 18px; }
+    padding-bottom: 0px;
+    font-size: 15px; }
     .testimony-29101 .text blockquote .author {
       font-size: 14px;
       position: absolute;
@@ -1925,3 +1925,8 @@ h1, h2, h3, h4, h5,
 
 .links li {
   margin-bottom: 10px; }
+
+.creditsSection:hover {
+  color:black;
+  cursor: pointer;
+}

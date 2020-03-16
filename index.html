@@ -306,16 +306,16 @@
               </div>
               <div class="col-md-4">
                 <ul class="list-unstyled links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Team</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
                 </ul>
               </div>
               <div class="col-md-4">
                 <ul class="list-unstyled links">
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li>Sign up for newsletter!</li>
+                  
                 </ul>
               </div>
             </div>
@@ -332,20 +332,27 @@
             <a href="#"><span class="m-2 icon-twitter"></span></a>
             <a href="https://www.linkedin.com/company/booler-projects/"><span class="m-2 icon-linkedin"></span></a>
             <a href="#"><span class="m-2 icon-instagram"></span></a>
-            <a href="#"><span class="m-2 icon-skype"></span></a>
           </div>
         </div>
         <div class="row mt-5 justify-content-center">
           <div class="col-md-7 text-center">
             <p>
-            &copy; 2020 Booler Projects  |  Credits
+            &copy; 2020 Booler Projects  |  <span class="creditsSection"><a onclick="myFunction()">Credits</a></span>
             </p>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-7 text-center" id="creditDiv" style="display: none;">
+            This website was created with the help of <a href="https://www.linkedin.com/in/faroukmarhaba/">Farouk Marhaba</a> and <a href="https://colorlib.com">Colorlib</a>
           </div>
         </div>
       </div>
     </div>
 
     
+
+
+
 
     </div>
 
@@ -380,6 +387,17 @@
 
 
     <script src="js/main.js"></script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("creditDiv");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
 
   </body>
 
