@@ -1795,6 +1795,30 @@ h1, h2, h3, h4, h5,
   .more-92913:before {
     height: 2px; }
 
+.bg-right-half {
+  position: relative; }
+  .bg-right-half:before {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    right: 0;
+    top: 0;
+    background-color: #fff6da; }
+
+.bg-right-third {
+  position: relative; }
+  .bg-right-third:before {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    right: 0;
+    top: 0;
+    background-color: #fff6da; }
+
 .bg-left-half {
   position: relative; }
   .bg-left-half:before {
