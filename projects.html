@@ -40,10 +40,8 @@
 
 
       <header class="site-navbar site-navbar-target" role="banner">
-
         <div class="container">
           <div class="row align-items-center position-relative">
-
             <div class="col-3 ">
               <div class="site-logo">
                 <a href="index.html" class="font-weight-bold">BoolerProjects</a>
@@ -51,12 +49,7 @@
             </div>
 
             <div class="col-9  text-right">
-              
-
               <span class="d-inline-block d-lg-none"><a href="#" class="text-primary site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-primary"></span></a></span>
-
-              
-
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li><a href="index.html" class="nav-link">Home</a></li>
@@ -65,12 +58,9 @@
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
-            </div>
-
-            
+            </div>     
           </div>
         </div>
-
       </header>
 
     <div class="ftco-blocks-cover-1">
@@ -86,7 +76,55 @@
       </div>
     </div>
 
-    <div class="site-section about-me">
+
+    <div class="site-section bg-tertiary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h2 class="text-primary mb-5 font-weight-bold">
+              Below are some projects - rather, <i>bool sessions</i>, we're working on.
+              <br><br>
+              Just know - if there's no passion behind the project, then there <i>is no</i> project.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="d-md-flex testimony-29102 align-items-stretch" style="margin-bottom:20px">
+                <div class="text">
+                  <blockquote>
+                    <div style="display: inline-block;"><h4>Session One - <span style="font-weight: 500;">Laconic</span></h4></div>
+                    <p id="textProject1">
+                      The gift giving industry is becoming increasingly commoditized, taking away many of the special aspects that gifting should allow for. At BP, we believe that society is ready for a change in the social conventions about how we think about gift-giving, and what the process should look like. We understand that some people like to be surprised, while others may want a particular item. Through Laconic, we are introducing a mechanism in order to make the gift giving process as seamless and transparent as possible for all parties involved.
+                    </p>
+                   </blockquote>
+                   <div>
+                    <p><span class="projectToggle"><a id="toggleProject1" class="more-29291" onclick="projectOneToggle()">More</a></span></p>
+                  </div>
+                </div>
+              </div>  
+  
+              <div class="d-md-flex testimony-29102 align-items-stretch" style="margin-bottom:20px">
+                <div class="text">
+                  <blockquote>
+                    <div style="display: inline-block;"><h4>Session Two - <span style="font-weight: 500;">Coming Soon...</span></h4></div>
+                  </blockquote>
+                </div>
+              </div>  
+          </div>
+        </div>  
+      </div>
+    </div>
+
+
+
+    <!-- <div class="site-section about-me">
      <div class="container">
        <div class="row align-items-center">
 
@@ -116,7 +154,7 @@
          
        </div>
      </div>
-   </div>
+   </div> -->
   
 
     <div class="site-section bg-left-half">
@@ -242,7 +280,7 @@
         <div class="row mt-5 justify-content-center">
           <div class="col-md-7 text-center">
             <p>
-            &copy; 2020 Booler Projects  |  <span class="creditsSection"><a onclick="myFunction()">Credits</a></span>
+            &copy; 2020 Booler Projects  |  <span class="creditsSection"><a onclick="creditToggle()">Credits</a></span>
             </p>
           </div>
         </div>
@@ -294,7 +332,21 @@
     <script src="js/main.js"></script>
 
     <script>
-      function myFunction() {
+      function projectOneToggle() {
+        var x = document.getElementById("toggleProject1");
+        var y = document.getElementById("textProject1");
+        if (x.innerHTML === "More") {
+          x.innerHTML = "Less";
+          y.innerHTML = "Wes and Farouk were heavily involved in miscellaneous businesses throughout their upbringing, collectively netting over a million dollars through various ventures from selling sneakers, scalping tickets, middlemanning transactions, repurposing vintage items, and much more. They collectively have owned so many different products that a lot of the genuine excitement for opening up a box with unknown content was lost on their end. This translated into difficulties in projecting their gift expectations from others, as they appreciated thoughtful personalized gifts to instill far more elation than more expensive material goods. Upon further research, they realized that these sentiments were fairly common and that the gift giving industry was becoming increasingly commoditized, taking away many of the special aspects that gifting someone should allow for. At Booler Projects, we believe that society is ready for a change in the social conventions about how we think about gift-giving, and what the process should look like. We understand that some people like to be surprised, while others may specifically want cash or a particular item. Through our first project, Laconic, we want to introduce a mechanism in order to make the gift giving process as seamless and transparent as possible for all parties involved. It is our mission to ensure that no one is unhappy with their gifts ever again because no one wants to spend money and be upset.";
+        } else {
+          x.innerHTML = "More";
+          y.innerHTML = "The gift giving industry is becoming increasingly commoditized, taking away many of the special aspects that gifting should allow for. At BP, we believe that society is ready for a change in the social conventions about how we think about gift-giving, and what the process should look like. We understand that some people like to be surprised, while others may want a particular item. Through Laconic, we are introducing a mechanism in order to make the gift giving process as seamless and transparent as possible for all parties involved.";
+        }
+      }
+      </script>
+
+    <script>
+      function creditToggle() {
         var x = document.getElementById("creditDiv");
         if (x.style.display === "none") {
           x.style.display = "block";
